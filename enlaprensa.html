@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En la prensa</title>
+    <!--enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <!--enlazo la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilos/restaurante.css">
+    <link rel="stylesheet" type="text/css" href="estilos/blog.css">
+    <link rel="stylesheet" type="text/css" href="estilos/detalleblog.css">
+    <!--librería Jquery y archivo con mi javaScript-->
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javaScript" src="js/restaurante.js"></script>
+    <!--script para que al pasar el ratón sobre la cabecera, ejecute un slideDown que visualice el cuerpo del artículo-->
+    <script>
+        $(document).ready(function(){
+            $(".blogcabecera").mouseover(function(){
+                $(".blogarticle").css("background-color","#fff");
+                $(".blogartic").slideDown(5000);
+            });
+
+        })//fin de document ready
+    </script>
+    <style>
+        .blogcabecera{
+            background: url(image/enlaprensa.jpg);
+            background-size:cover;
+            background-position:initial; 
+        }
+        .blogarticle{
+            background-color:transparent;
+        }
+        .blogartic{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <!--este contenedor albergará el icono del menú hamburguesa-->
+    <div id="mostrar_nav"></div>
+    <!--items del menú hamburguesa-->
+    <nav id="nav-menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--página principal del resturante introducción-->
+    <header>
+        <h1>Menú Vertical para diseño responsive</h1>
+    </header>
+    <div class="blogcabecera">
+        <!--este contenedor tendrá una imagen de fondo cargada desde el css-->
+    </div>
+    <section id="cuerpo"class="blogarticle">
+        <article class="blogartic">
+            <h2 class="blog-tit">Nuestro restaurante en la prensa</h2>
+            <p>“Devon on the wharf” abre sus puertas a los amantes de la gastronomía.</p>
+                
+             <p>Un lugar mágico que reúne a más de 13 nuevos talentos culinarios en un sitio que genera una experiencia única en donde se encuentran diferentes tipos de comida, preparada con altos estándares de calidad; son platos de autor que ahora pueden ser disfrutados por todos.</p>
+            
+            
+            <!--imagen para el artículo-->
+            <img src="image/Vista-jardin-nocturna.jpg" title="Vista Jardín Nocturna">
+
+            <p>Inspirados en lugares como Mercado Roma en Ciudad de México, plataforma de nuevas tendencias culinarias y el Gansevoort Market en Nueva York que se destaca por su arquitectura industrial que ofrece un espacio común para comer, entretenerse y relajarse.</p>
+
+              <p>Ofrecen el espacio para darle visibilidad a aquellos emprendedores que desean hacerse un hueco en el maravilloso mundo de los sabores.</p>
+                
+                <p>El diseño y la construcción aportan estética y embellecimiento a un sector que no cuenta con estas características.</p>
+                
+               <blockquote> <p>"Hemos sido cuidadosos en cada uno de los detalles. Pensamos un espacio con un diseño natrural con los mejores estándares, realizado con materiales trabajados a mano con acabados naturales y sencillos, hechos a medida, que generan al cliente que nos visite una experiencia única" afirmó Carlos Devon.</p></blockquote>
+                <p>Los espacios de Devon on the wharf son amplios, pero en conjunto logran un espacio acogedor, moderno y tranquilo. Son dos pisos con locales y lugares para sentarse que ofrecen diversas posibilidades de acomodación y aprovechamiento del espacio, para todo tipo de gustos y diversas horas del día. Cuenta con todos los servicios necesarios, amplios baños, aparcamiento.</p>
+                
+                <blockquote><p>“Hay un especial énfasis en el aprovechamiento del espacio así como de traer vegetación al interior del lugar”, afirmó Rodrigo Devon.</p></blockquote>
+            
+            
+
+            <p><a id="ir_reserva" href="reservas.html">Rerseve Ahora</a> su mesa y déjese llevar por los sentidos</p>
+            <a id="blog-regresar" href="blog.html">Indice Blog</a>
+        </article>
+    </section>
+    <section id="blog-rrss">
+        <div id="mas">
+            <!--contenedor para el símbolo más-->        
+        </div>
+        <!--contenedor para la redes sociales-->
+        <div id="redes">
+            <p>Compártelo en tus redes sociales</p>
+            <a href="https://www.facebook.com">
+                <img class="fb" id="fb" src="image/redes/facebook.png">
+            </a>
+            <a href="https://www.instagram.com">
+                <img class="ist" id="ist" src="image/redes/instagram.png">
+            </a>
+            <a href="https://www.pinterest.es">
+                <img class="pt" id="pt" src="image/redes/pinterest.png">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menú Vertical Responsive">Ejemplo Menú Vertical</a>
+    </footer>
+</body>
+</html>

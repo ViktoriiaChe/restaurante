@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturante Carta 2</title>
+    <!--enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <!--enlazo la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilos/restaurante.css">
+    <link rel="stylesheet" type="text/css" href="estilos/carta2.css">
+    <!--librería Jquery y archivo con mi javaScript-->
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javaScript" src="js/restaurante.js"></script>
+    <script type="text/javaScript" src="js/carta2.js"></script>
+</head>
+<body>
+    <!--este contenedor albergará el icono del menú hamburguesa-->
+    <div id="mostrar_nav"></div>
+    <!--items del menú hamburguesa-->
+    <nav id="nav-menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--página principal del resturante introducción-->
+    <header>
+        <h1>Degusta nuestros manjares...(2)</h1>
+    </header>
+    <!--código html para realización de la carta a modo de fichas, en cada ficha tendré los platos de cada una de las fases, entrantes, para continuar....-->
+
+    <div id="efectocristal" class="efectocristal"></div>
+    <!--esta es la estructura que soportará las pestañas de cada ficha-->
+    <section id="carta_cliente">
+        <ul class="tabs">
+            <li><a href="#tab1">Para Empezar...</a></li>
+            <li><a href="#tab2">Para Continuar...</a></li>
+            <li><a href="#tab3">Mar y Tierra...</a></li>
+            <li><a href="#tab4">Dulces Momentos...</a></li>
+        </ul>
+        <!--contenedor donde mostraré los platos de cada fase-->
+        <div class="tab_container">
+            <p class="impuestos">Incluir I.V.A. <input type="checkbox" name="micheckbox" id="micheckbox"></p>
+            <div class="tab_contenido" id="tab1">
+                <!--este contenedor tendrá todos los primeros platos-->
+                <p class="textocarta">Platos para empezar...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Tartar de Atún</h3><span>9.99</span>€
+                    </li>
+                    <li>
+                        <h3>Calabacín Relleno</h3><span>12.50</span>€
+                    </li>
+                    <li>
+                        <h3>Pan Cristal y Jamón</h3><span>7.99</span>€
+                    </li>
+                </ol>
+            </div>
+              <!--este contenedor para los platos de continuar....-->
+              <div class="tab_contenido" id="tab2">
+                <!--este contenedor tendrá todos los segundos platos-->
+                <p class="textocarta">Para continuar...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Pastel de cabracho</h3><span>15.70</span>€
+                    </li>
+                    <li>
+                        <h3>Tosta de Salmón</h3><span>18.50</span>€
+                    </li>
+                    <li>
+                        <h3>Solomillo al Jeréz</h3><span>21.50</span>€
+                    </li>
+                    <li>
+                        <h3>Solomillo relleno confitura de Cebolla</h3><span>20.50</span>€
+                    </li>
+                </ol>
+            </div>
+            <!--este contenedor tendrá los platos de Mar y Tierra-->
+            <div class="tab_contenido" id="tab3">
+                <!--este contenedor tendrá todos los tercer platos-->
+                <p class="textocarta">Mar y Tierra...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Lubina</h3><span>18.50</span>€
+                    </li>
+                    <li>
+                        <h3>Marmitaco</h3><span>18.50</span>€
+                    </li>
+                    <li>
+                        <h3>Bacalao Con Mejillones</h3><span>22.50</span>€
+                    </li>
+                </ol>
+            </div>
+            <!--contenedor de los postres-->
+            <div class="tab_contenido" id="tab4">
+                <!--este contenedor tendrá todos los postres-->
+                <p class="textocarta">Dulces momentos...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Arroz con leche</h3><span>8.50</span>€
+                    </li>
+                    <li>
+                        <h3>Tiramisú</h3><span>9.00</span>€
+                    </li>
+                    <li>
+                        <h3>Filloas</h3><span>7.50</span>€
+                    </li>
+                    <li>
+                        <h3>Pudin</h3><span>6.50</span>€
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menú Vertical Responsive">Ejemplo Menú Vertical</a>
+    </footer>
+</body>
+</html>

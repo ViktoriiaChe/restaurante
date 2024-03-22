@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturante Carta 2</title>
+    <!--enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <!--enlazo la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilos/restaurante.css">
+    <link rel="stylesheet" type="text/css" href="estilos/carta2.css">
+    <!--librería Jquery y archivo con mi javaScript-->
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javaScript" src="js/restaurante.js"></script>
+    <script type="text/javaScript" src="js/carta2.js"></script>
+</head>
+<body>
+    <!--este contenedor albergará el icono del menú hamburguesa-->
+    <div id="mostrar_nav"></div>
+    <!--items del menú hamburguesa-->
+    <nav id="nav-menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--página principal del resturante introducción-->
+    <header>
+        <h1>Degusta nuestros manjares...(2)</h1>
+    </header>
+    <!--código html para realización de la carta a modo de fichas, en cada ficha tendré los platos de cada una de las fases, entrantes, para continuar....-->
+
+    <div id="efectocristal" class="efectocristal"></div>
+    <!--esta es la estructura que soportará las pestañas de cada ficha-->
+    <section id="carta_cliente">
+        <ul class="tabs">
+            <li><a href="#tab1">Para Empezar...</a></li>
+            <li><a href="#tab2">Para Continuar...</a></li>
+            <li><a href="#tab3">Mar y Tierra...</a></li>
+            <li><a href="#tab4">Dulces Momentos...</a></li>
+            <li><a href="#tab5">En tu casa...</a></li>
+        </ul>
+        <!--contenedor donde mostraré los platos de cada fase-->
+        <div class="tab_container">
+            <p class="impuestos selector">Incluir I.V.A. <input type="checkbox" name="micheckbox" id="micheckbox"></p>
+            <p class="impuestos selector">Mostrar Alergenos <input type="checkbox" name="micheckbox1" id="micheckbox1"></p>
+            <div class="tab_contenido" id="tab1">
+                <!--este contenedor tendrá todos los primeros platos-->
+                <p class="textocarta">Platos para empezar...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Tartar de Atún</h3><span>9.99</span>€
+                    </li>
+                    <li>
+                        <h3>Calabacín Relleno</h3><span>12.50</span>€
+                    </li>
+                    <li>
+                        <h3>Pan Cristal y Jamón</h3><span>7.99</span>€
+                    </li>
+                </ol>
+            </div>
+              <!--este contenedor para los platos de continuar....-->
+              <div class="tab_contenido" id="tab2">
+                <!--este contenedor tendrá todos los segundos platos-->
+                <p class="textocarta">Para continuar...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Pastel de cabracho</h3><span>15.70</span>€
+                    </li>
+                    <li>
+                        <h3>Tosta de Salmón</h3><span>18.50</span>€
+                    </li>
+                    <li>
+                        <h3>Solomillo al Jeréz</h3><span>21.50</span>€
+                    </li>
+                    <li>
+                        <h3>Solomillo relleno confitura de Cebolla</h3><span>20.50</span>€
+                    </li>
+                </ol>
+            </div>
+            <!--este contenedor tendrá los platos de Mar y Tierra-->
+            <div class="tab_contenido" id="tab3">
+                <!--este contenedor tendrá todos los tercer platos-->
+                <p class="textocarta">Mar y Tierra...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Lubina</h3><span>18.50</span>€
+                    </li>
+                    <li>
+                        <h3>Marmitaco</h3><span>18.50</span>€
+                    </li>
+                    <li>
+                        <h3>Bacalao Con Mejillones</h3><span>22.50</span>€
+                    </li>
+                </ol>
+            </div>
+            <!--contenedor de los postres-->
+            <div class="tab_contenido" id="tab4">
+                <!--este contenedor tendrá todos los postres-->
+                <p class="textocarta">Dulces momentos...</p>
+                <ol class="platosprecios">
+                    <li>
+                        <h3>Arroz con leche</h3><span>8.50</span>€
+                    </li>
+                    <li>
+                        <h3>Tiramisú</h3><span>9.00</span>€
+                    </li>
+                    <li>
+                        <h3>Filloas</h3><span>7.50</span>€
+                    </li>
+                    <li>
+                        <h3>Pudin</h3><span>6.50</span>€
+                    </li>
+                </ol>
+            </div>
+            <!--nuevo formulario para realizar  pedidos -->
+            <div class="tab_contenido" id="tab5">
+                <!--este contenedor tendrá todos los platos del restaurante-->
+                <p class="textocarta">Realiza tu pedido</p>
+                <form id="pedidos" name="pedidos" action="#" method="post">
+                    <!--en este formulario irán todos los platos precedidos de un checkbox y seguidos de un input numérico-->
+                    <h4 class="seccioncarta">Para empezar</h4>
+                    <p><input type="checkbox" class="selector" name="plato1" id="1"><label class="nombreplato">Tartar de Atún</label><span class="precio">9.90</span><input type="number" name="cantidadplato1" id="cantidadplato1" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato2" id="2"><label class="nombreplato">Calabacín Relleno</label><span class="precio">12.50</span><input type="number" name="cantidadplato2" id="cantidadplato2" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato3" id="3"><label class="nombreplato">Pan de Cristal y Jamón</label><span class="precio">14</span><input type="number" id="cantidadplato3"name="cantidadplato3" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <h4 class="seccioncarta">Para continuar</h4>
+                    <p><input type="checkbox" class="selector" name="plato4" id="4"><label class="nombreplato">Pastel de cabracho</label><span class="precio">17.50</span><input type="number" name="cantidadplato4" id="cantidadplato4" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato5" id="5"><label class="nombreplato">Tosta de Salmón</label><span class="precio">18</span><input type="number" name="cantidadplato5" id="cantidadplato5" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato6" id="6"><label class="nombreplato">Solomillo al Jeréz</label><span class="precio">21</span><input type="number" id="cantidadplato6" name="cantidadplato6" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato7" id="7"><label class="nombreplato">Solomillo relleno confitura cebolla</label><span class="precio">21.50</span><input type="number" id="cantidadplato7" name="cantidadplato7" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <h4 class="seccioncarta">Mar y Tierra</h4>
+                    <p><input type="checkbox" class="selector" name="plato8" id="8"><label class="nombreplato">Lubina</label><span class="precio">17.50</span><input type="number" name="cantidadplato8" id="cantidadplato8" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato9" id="9"><label class="nombreplato">Marmitaco</label><span class="precio">18</span><input type="number" name="cantidadplato9" id="cantidadplato9" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato10" id="10"><label class="nombreplato">Bacalao con Mejillones</label><span class="precio">21</span><input type="number" name="cantidadplato10" id="cantidadplato10" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    
+                    <h4 class="seccioncarta">Dulces momentos</h4>
+                    <p><input type="checkbox" class="selector" name="plato11" id="11"><label class="nombreplato">Arroz con leche</label><span class="precio">17.50</span><input type="number"  id="cantidadplato11" name="cantidadplato11" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato12" id="12"><label class="nombreplato">Tiramisú</label><span class="precio">18</span><input type="number" name="cantidadplato12" id="cantidadplato12" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato13" id="13"><label class="nombreplato">Filloas</label><span class="precio">21</span><input type="number" name="cantidadplato13" id="cantidadplato13" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <p><input type="checkbox" class="selector" name="plato14" id="14"><label class="nombreplato">Pudin</label><span class="precio">21.50</span><input type="number" name="cantidadplato14" id="cantidadplato14" min="1" max="10" value="" class="cantidaddeplato"></p>
+                    <!--botón que estará desactivado mientras el usuario no seleccione algún plato-->
+                    <p><input type="button"id="tramitarpedido" value="Tramitar Pedido" disabled></p>
+                    <section id="datoscliente">
+                        <p><label for="nombrecli">Nombre</label><input type="text" id="nombrecli"  name="nombrecli" required></p>
+                        <p><label for="apellidoscli">Apellidos</label><input type="text" id="apellidoscli" required></p>
+                        <p><label for="telcli">Teléfono</label><input type="tel" id="telcli" required></p>
+                        <p><label for="mailcli">E-mail</label><input type="email" id="mailcli" required></p>
+                        <p><label for="fecha">Fecha</label><input type="date" name="fecha" id="fecha" max="2024-06-30" required></p>
+                        <p><label for="hora">Hora recogida: </label><input type="datetime" name="hora" id="hora" required></p>
+                        <p><input type="button" id="confirmarPedido" value="Confirmar Pedido" disabled></p>
+                    </section>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menú Vertical Responsive">Ejemplo Menú Vertical</a>
+    </footer>
+</body>
+</html>

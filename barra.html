@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturante</title>
+    <!--enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <!--enlazo la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilos/restaurante.css">
+    <link rel="stylesheet" type="text/css" href="estilos/barra.css">
+    <link rel="stylesheet" type="text/css" href="estilos/detalleblog.css">
+    <!--librería Jquery y archivo con mi javaScript-->
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javaScript" src="js/restaurante.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <link rel="stylesheet" href="jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    
+<body>
+    <!--este contenedor albergará el icono del menú hamburguesa-->
+    <div id="mostrar_nav"></div>
+    <!--items del menú hamburguesa-->
+    <nav id="nav-menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--página principal del resturante introducción-->
+    <header>
+        <h1>...disfruta de nuestros mejores cócteles</h1>
+    </header>
+    <!-- cuerpo de la página barra-->
+    <section class="barra">
+        <article id="fila1">
+            <!--cóctel 1-->
+            <div id="f1" class="ver">
+                <img src="image/barra1.jpg" alt="Margarita">
+                <div id="m1" class="mascara">
+                    <h2 id="t1">Margarita</h2>
+                    <ul>
+                        <li>Tequila blanco</li>
+                        <li>Zumo limón</li>
+                        <li>Hielo</li>
+                        <li>Sal</li>
+                    </ul>
+                </div>
+            </div>
+            <!--cóctel 2-->
+            <div id="f2" class="ver">
+                <img src="image/barra2.jpg" alt="Gin-Tonic">
+                <div id="m2" class="mascara">
+                    <h2 id="t2">Gin-Tonic</h2>
+                    <ul>
+                        <li>Ginebra</li>
+                        <li>Tónica</li>
+                        <li>Hielo</li>
+                        <li>Pepino</li>
+                    </ul>
+                </div>
+            </div>
+            <!--cóctel 3-->
+            <div id="f3" class="ver">
+                <img src="image/barra3.jpg" alt="Margarita -Fresa">
+                <div id="m3" class="mascara">
+                    <h2 id="t3">Margarita<br>de Fresa</h2>
+                    <ul>
+                        <li>Tequila Blanco</li>
+                        <li>Fresas, limón</li>
+                        <li>Hielo</li>
+                        <li>Angostura</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <!--fila dos para el resto de los cócteles-->
+        <article id="fila2">
+            <!--cóctel 4-->
+            <div id="f4" class="ver">
+                <img src="image/barra4.jpg" alt="Martini">
+                <div id="m4" class="mascara">
+                    <h2 id="t4">Martini</h2>
+                    <ul>
+                        <li>Martini</li>
+                        <li>Ginebra</li>
+                        <li>Hielo</li>
+                        <li>Aceituna</li>
+                    </ul>
+                </div>
+            </div>
+            <!--cóctel 5-->
+            <div id="f5" class="ver">
+                <img src="image/barra5.jpg" alt="Cosmopolitan">
+                <div id="m5" class="mascara">
+                    <h2 id="t5">Cosmopolitan</h2>
+                    <ul>
+                        <li>Vodka</li>
+                        <li>zumo arándanos</li>
+                        <li>zumo lima</li>
+                        <li>Licor Naranja</li>
+                    </ul>
+                </div>
+            </div>
+            <!--cóctel 6-->
+            <div id="f6" class="ver">
+                <img src="image/barra6.jpg" alt="Khalua-coke">
+                <div id="m6" class="mascara">
+                    <h2 id="t6">Khalua-Coke</h2>
+                    <ul>
+                        <li>Khalua</li>
+                        <li>CocaCola</li>
+                        <li>Hielo</li>   
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </section>
+    <!--este apartado es para el botón que activará la ventana de visionado del video-->
+    <section id="boton">
+        <a href="https://www.youtube.com/watch?v=cpsnXvQZAb8&list=PLo-artO3hx9f7dQ7Pt7-Daxw5i8IFHw_y" class="visorvideo" title="Nuestro Barman">Nuestro Barman</a>
+    </section>
+    <footer id="pieprincipal">
+        <div id="footerizq">
+            <p>Estamos en:</p>
+            <p>Dirección</p>
+            <p>Teléfono</p>
+        </div>
+        <div id="footercentro">
+            <div id="redes">
+                <p>Compártelo en tus redes sociales</p>
+                <a href="https://www.facebook.com">
+                    <img class="fb" id="fb" src="image/redes/facebook.png">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img class="ist" id="ist" src="image/redes/instagram.png">
+                </a>
+                <a href="https://www.pinterest.es">
+                    <img class="pt" id="pt" src="image/redes/pinterest.png">
+                </a>
+            </div>
+
+        </div>
+        <div id="footerdcha">
+            <a href="integracionmapa.html" target="_blank" title="Nuestra ubicación " Alt="Acceso a página Google Map">Encuentranos aquí</a>
+        </div>
+        
+    </footer>
+</body>
+</html>

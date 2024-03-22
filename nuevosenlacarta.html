@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturante</title>
+    <!--enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <!--enlazo la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilos/restaurante.css">
+    <link rel="stylesheet" type="text/css" href="estilos/blog.css">
+    <link rel="stylesheet" type="text/css" href="estilos/detalleblog.css">
+    <!--librería Jquery y archivo con mi javaScript-->
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javaScript" src="js/restaurante.js"></script>
+    <style>
+        .blogcabecera{
+            background: url(image/fotcab.jpg);
+            background-size:cover;
+            background-position: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <!--este contenedor albergará el icono del menú hamburguesa-->
+    <div id="mostrar_nav"></div>
+    <!--items del menú hamburguesa-->
+    <nav id="nav-menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--página principal del resturante introducción-->
+    <header>
+        <h1>Menú Vertical para diseño responsive</h1>
+    </header>
+    <div class="blogcabecera">
+        <!--este contenedor tendrá una imagen de fondo cargada desde el css-->
+    </div>
+    <section id="cuerpo"class="blogarticle">
+        <article class="blogartic">
+            <h2 class="blog-tit">Nuevo en la carta</h2>
+            
+            <p>Estrenamos nueva carta y uno de nuestros platos estrella es el carpacio de vieira, un plato muy fresquito para este tiempo</p>
+            
+            <p>Éstos son algunos de los platos que podréis disfrutar en nuestro restaurante.</p>
+            <ul>
+            <li>Gazpacho de sandía con gelée de yuzu y menta con hueva de atún en salazón</li>
+            <li>Tartar de atún con tapenade de altramuces y crema acidulce de manzana</li>
+            <li> Ventresca de atún con bilbaina de verduras y chips de alcachofas</li>
+            <li>Cochinillo crujiente confitado a baja temperatura con ensalada de fresas y canónigos</li>
+            <li>Panacotta de chocolate blanco con coulís de frambuesa</li>
+            </ul>
+            <h2>Cordero a la miel</h2>
+            <img src="image/Cordero-miel.jpg" title="Cordero a la miel">
+            <p>El cordero al horno es un plato muy arraigado en la gastronomía española, con una gran diversidad de preparaciones. Nuestra receta de cordero procede de la zona mediterránea, históricamente influenciada por la cultura árabe donde el cordero es uno de los pilares de su alimentación.</p>
+            
+            <p>Es una carne tierna, suave y jugosa, que preparamos al horno. Para nuestro plato siempre escogemos una paletilla de un cordero joven de unos 7 kilos de peso, combinado con el toque meloso de la miel de romero que le aportará un sabor y color especial a nuestro asado.</p>
+
+            <p><a id="ir_reserva" href="reservas.html">Rerseve Ahora</a> su mesa y déjese llevar por los sentidos</p>
+            <a id="blog-regresar" href="blog.html">Indice Blog</a>
+        </article>
+    </section>
+    <section id="blog-rrss">
+        <div id="mas">
+            <!--contenedor para el símbolo más-->        
+        </div>
+        <!--contenedor para la redes sociales-->
+        <div id="redes">
+            <p>Compártelo en tus redes sociales</p>
+            <a href="https://www.facebook.com">
+                <img class="fb" id="fb" src="image/redes/facebook.png">
+            </a>
+            <a href="https://www.instagram.com">
+                <img class="ist" id="ist" src="image/redes/instagram.png">
+            </a>
+            <a href="https://www.pinterest.es">
+                <img class="pt" id="pt" src="image/redes/pinterest.png">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menú Vertical Responsive">Ejemplo Menú Vertical</a>
+    </footer>
+</body>
+</html>

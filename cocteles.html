@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturante</title>
+    <!--enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <!--enlazo la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilos/restaurante.css">
+    <!--librería Jquery y archivo con mi javaScript-->
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javaScript" src="js/restaurante.js"></script>
+    <style>
+        section.contenedor-caja-video{
+       display:80%;
+         margin:1em auto;
+        }
+      
+      video{
+        width:25%;
+        border:2px solid rgb(198,114,11);
+       box-shadow: 10px 10px 39px 10px rgba(245,242,245,1);
+        margin:2em;
+      }
+    </style>
+</head>
+<body>
+    <!--este contenedor albergará el icono del menú hamburguesa-->
+    <div id="mostrar_nav"></div>
+    <!--items del menú hamburguesa-->
+    <nav id="nav-menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--página principal del resturante introducción-->
+    <header>
+        <h1>Menú Vertical para diseño responsive</h1>
+    </header>
+    <article id="cuerpo">
+        
+        <!--contenedor del video-->
+        <section class="contenedor-caja-video">
+        <video class="caja-video" class="video" autoplay loop preload="auto" volume="50" controls>
+            <source src="video/brugal.mp4" type="video/mp4"/>
+        </video>
+        <video class="caja-video" class="video" autoplay loop preload="auto" volume="50" controls>
+            <source src="video/J_B.mp4" type="video/mp4"/>
+        </video>
+        <video class="caja-video" class="video" autoplay loop preload="auto" volume="50"controls>
+            <source src="video/Smirnoff.mp4" type="video/mp4"/>
+        </video>
+    </section>
+    </article>
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menú Vertical Responsive">Ejemplo Menú Vertical</a>
+    </footer>
+</body>
+</html>

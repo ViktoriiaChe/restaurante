@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturante</title>
+    <!--enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <!--enlazo la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilos/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="estilos/restaurante.css">
+    <link rel="stylesheet"  type="text/css" href="estilos/carta.css">
+    <link rel="stylesheet" type="text/css" href="estilos/detalleblog.css">
+    <!--librería Jquery y archivo con mi javaScript-->
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javaScript" src="js/restaurante.js"></script>
+</head>
+<body>
+    <section id="cabeceraprincipal">
+    <!--este contenedor albergará el icono del menú hamburguesa-->
+        <div id="mostrar_nav"></div>
+        <!--items del menú hamburguesa-->
+        <nav id="nav-menu">
+            <ul class="menu">
+                <li><a href="index.html">Nosotros</a></li>
+                <li><a href="carta.html">La Carta</a></li>
+                <li><a href="barra.html">La Barra</a></li>
+                <li><a href="reserva.html">Reservas</a></li>
+                <li><a href="blog.html">El blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!--página principal del resturante introducción-->
+        <header>
+            <h1>Degusta nuestros manjares...</h1>
+        </header>
+    </section>
+    <article class="volver">
+        <!--he quitado el enlace a #carta para hacer el efecto desde js-->
+        <img src="image/cuchilleria.png" Alt="botón volver al menú" title="volver">
+    </article>
+    <article id="carta">   
+        <section class="container">
+            <header>
+                <nav>
+                    <a href="#abrebocas">Abre Bocas</a>
+                    <a href="#paracontinuar">Para Continuar</a>
+                    <a href="#monmar">Montaña y Mar</a>
+                    <a href="#dulces">Un dulce momento</a>
+                </nav>
+            </header>
+
+            
+            <!--primeros platos Abre bocas-->
+            <h2 id="abrebocas" class="titulocarta">Abre Bocas ...</h2>
+            <article class="estilocarta">
+                <div id="textoarticulo">
+                    <div id="p1" class="platos">
+                        <h3>Tartar atún</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    <div id="p2" class="platos">
+                        <h3>Nombre Plato 2</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    <div id="p3" class="platos">
+                        <h3>Nombre plato 3</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                </div>
+               <div id="fotoarticulo" class="estilofoto">
+                    <img src="image/abreboca1.jpg">
+                </div>
+            </article>
+
+            <!--segundos platos para continuar-->
+            <h2 id="paracontinuar" class="titulocarta">Para Continuar...</h2>
+            <article class="estilocarta">
+                <div id="textoarticulo2">
+                    <div id="p21" class="platos">
+                        <h3>Segundo Plato 1</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    <div id="p22" class="platos">
+                        <h3>Segundo Plato 2</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    
+                    <div id="p23" class="platos">
+                        <h3>Segundo plato3</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    <div id="p24" class="platos">
+                        <h3>Segundo plato 4</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    
+                </div>
+                <div id="fotoarticulo2" class="estilofoto">
+                    <img src="image/continuar1.jpg">
+                </div>
+            </article>
+             <!--montaña y mar-->
+             <h2 id="monmar" class="titulocarta">Montaña y Mar</h2>
+            <article class="estilocarta">
+                <div id="textoarticulo3">
+                    <div id="p31" class="platos">
+                        <h3>Tercero Plato 1</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    <div id="p32" class="platos">
+                        <h3>Tercero Plato 2</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    
+                    <div id="p33" class="platos">
+                        <h3>Tercero plato3</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    
+                </div>
+                <div id="fotoarticulo3" class="estilofoto">
+                    <img src="image/monmar1.jpg">
+                </div>
+            </article>
+            <!--postres -->
+            <h2 id="dulces" class="titulocarta">Dulces momentos...</h2>
+            <article class="estilocarta">
+                <div id="textoarticulo4">
+                    <div id="p41" class="platos">
+                        <h3>postres Plato 1</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    <div id="p42" class="platos">
+                        <h3>Postres Plato 2</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    
+                    <div id="p43" class="platos">
+                        <h3>Postres plato3</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    <div id="p44" class="platos">
+                        <h3>Postres plato 4</h3>
+                        <p>Aquí irá la descripción del plato será una descripción con los ingredientes y la preparación</p>
+                    </div>
+                    
+                </div>
+                <div id="fotoarticulo4" class="estilofoto">
+                    <img src="image/postres1.jpg">
+                </div>
+            </article>
+             
+
+        </section>
+    </article>
+    <footer id="pieprincipal">
+        <div id="footerizq">
+            <p>Estamos en:</p>
+            <p>Dirección</p>
+            <p>Teléfono</p>
+        </div>
+        <div id="footercentro">
+            <div id="redes">
+                <p>Compártelo en tus redes sociales</p>
+                <a href="https://www.facebook.com">
+                    <img class="fb" id="fb" src="image/redes/facebook.png">
+                </a>
+                <a href="https://www.instagram.com">
+                    <img class="ist" id="ist" src="image/redes/instagram.png">
+                </a>
+                <a href="https://www.pinterest.es">
+                    <img class="pt" id="pt" src="image/redes/pinterest.png">
+                </a>
+            </div>
+
+        </div>
+        <div id="footerdcha">
+            <a href="integracionmapa.html" target="_blank" title="Nuestra ubicación " Alt="Acceso a página Google Map">Encuentranos aquí</a>
+        </div>
+        
+    </footer>
+</body>
+</html>

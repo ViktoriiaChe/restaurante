@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturante</title>
+    <!--enlace para el favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <!--enlazo la hoja de estilo-->
+    <link rel="stylesheet" type="text/css" href="estilos/restaurante.css">
+    <!--librería Jquery y archivo con mi javaScript-->
+    <script src="Jquery/jquery-3.7.1.min.js"></script>
+    <script type="text/javaScript" src="js/restaurante.js"></script>
+</head>
+<body>
+    <!--este contenedor albergará el icono del menú hamburguesa-->
+    <div id="mostrar_nav"></div>
+    <!--items del menú hamburguesa-->
+    <nav id="nav-menu">
+        <ul class="menu">
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="carta.html">La Carta</a></li>
+            <li><a href="barra.html">La Barra</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="blog.html">El blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!--página principal del resturante introducción-->
+    <header>
+        <h1>Menú Vertical para diseño responsive</h1>
+    </header>
+    <article id="cuerpo">
+        <div id="texto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis praesentium rerum iusto architecto reprehenderit voluptate atque eius quo non porro? Debitis odio eos, ullam rem excepturi nemo rerum explicabo blanditiis?</p>
+            <p>Deserunt expedita facere nesciunt similique sunt nulla? Sint soluta voluptate maxime?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, maxime dolore. Totam error, vitae adipisci illo culpa pariatur quisquam. </p>
+        </div>
+        <!--contenedor del video-->
+        <video autoplay loop id="video_background" preload="auto" volume="50">
+            <source src="video/restaurantes.mp4" type="video/mp4"/>
+        </video>
+    </article>
+    <footer>
+        <a href="#" target="_blank" title="Ejemplo Menú Vertical Responsive">Ejemplo Menú Vertical</a>
+    </footer>
+</body>
+</html>
